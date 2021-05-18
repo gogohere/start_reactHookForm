@@ -6,11 +6,9 @@ type Inputs = {
     exampleRequired: String;
 };
 
-function Demo1(props) {
+function Demo1() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
-
     const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
-
     console.log(watch('example')); // 通过名字观察输入的值
 
     return (
