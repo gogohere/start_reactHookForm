@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 enum GenderEnum {
@@ -7,6 +5,7 @@ enum GenderEnum {
     male = 'male',
     other = 'other'
 }
+
 interface IFormInput {
     firstName: String;
     gender: GenderEnum;

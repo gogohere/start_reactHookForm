@@ -3,6 +3,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { commonRouter } from './router/router';
 import './App.css';
 
+
 const getRouterList = (routes) => {
     return routes.map(item =>
         <Route
