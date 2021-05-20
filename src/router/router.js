@@ -2,43 +2,43 @@ import { lazy } from 'react';
 
 export const commonRouter = [
     {
-        path: '/demo1',
+        path: '/quickStart/demo1',
         name: 'demo1',
-        component: lazy(() => import('../pages/Demo1'))
+        component: lazy(() => import('../pages/quickStart/Demo1'))
     },
     {
-        path: '/demo2',
+        path: '/quickStart/demo2',
         name: 'demo2',
-        component: lazy(() => import('../pages/Demo2'))
+        component: lazy(() => import('../pages/quickStart/Demo2'))
     },
     {
-        path: '/demo3',
+        path: '/quickStart/demo3',
         name: 'demo3',
-        component: lazy(() => import('../pages/Demo3'))
+        component: lazy(() => import('../pages/quickStart/Demo3'))
     },
     {
-        path: '/demo4',
+        path: '/quickStart/demo4',
         name: 'demo4',
-        component: lazy(() => import('../pages/Demo4'))
+        component: lazy(() => import('../pages/quickStart/Demo4'))
     },
     {
-        path: '/demo5',
+        path: '/quickStart/demo5',
         name: 'demo5',
-        component: lazy(() => import('../pages/Demo5'))
+        component: lazy(() => import('../pages/quickStart/Demo5'))
     },
     {
-        path: '/demo6',
+        path: '/quickStart/demo6',
         name: 'demo6',
-        component: lazy(() => import('../pages/Demo6'))
+        component: lazy(() => import('../pages/quickStart/Demo6'))
     },
     {
-        path: '/demo7',
+        path: '/quickStart/demo7',
         name: 'demo7',
-        component: lazy(() => import('../pages/Demo7'))
+        component: lazy(() => import('../pages/quickStart/Demo7'))
     },
     {
-        path: '/demo8',
+        path: '/quickStart/demo8',
         name: 'demo8',
-        component: lazy(() => import('../pages/Demo8'))
+        component: lazy(() => import('../pages/quickStart/Demo8'))
     },
 ]

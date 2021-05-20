@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { Input } from 'maycur-antd';
 import { connect } from 'react-redux';
-import nameStore from '../../store/demo6.js';
+import nameStore from '../../../store/demo6.js';
 
 
 const Demo6 = (props) => {
