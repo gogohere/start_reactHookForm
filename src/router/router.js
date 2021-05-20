@@ -31,4 +31,14 @@ export const commonRouter = [
         name: 'demo6',
         component: lazy(() => import('../pages/Demo6'))
     },
+    {
+        path: '/demo7',
+        name: 'demo7',
+        component: lazy(() => import('../pages/Demo7'))
+    },
+    {
+        path: '/demo8',
+        name: 'demo8',
+        component: lazy(() => import('../pages/Demo8'))
+    },
 ]
