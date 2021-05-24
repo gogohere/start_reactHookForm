@@ -1,18 +1,28 @@
 import { Input, Select, Button } from 'maycur-antd';
 
-import { useForm, SubmitHandler, Controller } from 'react-hook-form';
+import { useForm, SubmitHandler, Controller, useWatch } from 'react-hook-form';
 
 interface IFormInput {
     firstName: string;
     lastName: string;
-    iceCreamType: { label: string; value: string };
+    iceCreamType: string;
 }
 
 const { Option } = Select;
 
 function Demo4() {
-    const { control, handleSubmit } = useForm<IFormInput>();
+    // const { control, handleSubmit, getValues } = useForm<IFormInput>();
+    const { control, handleSubmit, getValues } = useForm<IFormInput>({
+        defaultValues:{
+            // firstName: '222222',
+            iceCreamType: 'strawberry',
+        }
+    });
     const onSubmit: SubmitHandler<IFormInput> = data => console.log(data);
+    const firstName = useWatch({
+        control,
+        name: 'firstName',
+    })
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -41,6 +51,8 @@ function Demo4() {
                 }}
             />
             <Button htmlType="submit">提交</Button>
+            {/* {getValues('firstName')} */}
+            {firstName}
         </form>
     );
 };
